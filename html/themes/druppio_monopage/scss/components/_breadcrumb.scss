@@ -1,0 +1,19 @@
+.breadcrumb {
+    padding-left: 0;
+    li {
+        display: inline-block;
+        list-style-type: none;
+        &:first-child {
+            &:before {
+                content: "";
+            }
+        }
+        &:before {
+            content: "/";
+        }
+        a {
+            font-size: 12px;
+            &:hover {}
+        }
+    }
+}

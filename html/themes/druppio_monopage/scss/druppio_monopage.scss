@@ -1,0 +1,23 @@
+// @import "style-vars.scss";
+// Import variables, abstractions, base styles and components.
+// Uncomment the next lines and adjust them to your needs.
+//@import "../libraries/normalize-libsass/normalize";
+//@import "../libraries/breakpoint-sass/stylesheets/breakpoint";
+//@import "../../libraries/components-font-awesome/scss/font-awesome";
+@import "variables/**/*";
+@import "elements/**/*";
+@import "abstractions/**/*";
+@import "components/**/*";
+$fa-font-path: "../fonts/fontawesome";
+@import "../libraries/components-font-awesome/scss/font-awesome";
+//==
+//==
+//==
+//==
+body {
+    padding-top: 80px;
+    &.path-frontpage {
+        padding-top: 0;
+    }
+}
+

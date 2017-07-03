@@ -1,0 +1,10 @@
+.block-title {
+    font-size: 28px;
+    @media (min-width: $screen-sm-min) {
+        font-size: 42px;
+    }
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-weight: bold;
+}

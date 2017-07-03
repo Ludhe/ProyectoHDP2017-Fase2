@@ -1,0 +1,17 @@
+{
+    "name": "sass-imports",
+    "description": "Required sass imports for building Drupio Drupal themes.",
+    "dependencies": {
+        "normalize-libsass": "~1.0.3",
+        "components-font-awesome": "~4.5.0",
+        "bootstrap-sass": "~3.3.6"
+
+    },
+    "ignore": [
+    "node_modules"
+  ],
+    "devDependencies": {
+        "breakpoint-sass": "^2.7.0",
+        "compass-mixins": "^1.0.2"
+    }
+}

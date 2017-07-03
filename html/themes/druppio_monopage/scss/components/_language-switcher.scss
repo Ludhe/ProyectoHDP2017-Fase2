@@ -1,0 +1,31 @@
+#language-outer-wrapper{
+//    background-color: darken($primaryColor4, 10%);
+}
+.region--language {
+    margin-top: 0;
+
+    ul {
+        padding:4px 0 6px 0;
+        text-align: right;
+        margin: 0;
+
+        li {
+            display: inline-block;
+            list-style-type: none;
+            padding: 0 10px;
+            a{
+                font-size:12px;
+                &.is-active{
+                    &:after{
+                        content:"]";
+                        padding-left: 4px;
+                    }
+                    &:before{
+                        content:"[";
+                         padding-right: 4px;
+                    }
+                }
+            }
+        }
+    }
+}

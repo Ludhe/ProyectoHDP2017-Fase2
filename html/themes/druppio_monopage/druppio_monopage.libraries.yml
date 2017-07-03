@@ -1,0 +1,35 @@
+bootstrap:
+    version: 3.x
+    js:
+      # Custom Javascript file for your own JS modifications.
+      # Examples of behaviors in JS file
+      js/bootstrap.min.js: {}
+    dependencies:
+      - core/jquery
+    css:
+      theme:
+        # Custom CSS file to be loaded in all media circumstances
+        css/bootstrap.css: {}
+
+druppio-monopage:
+  version: 1.x
+  js:
+    # Custom Javascript file for your own JS modifications.
+    # Examples of behaviors in JS file.
+    js/druppio_monopage.js: {}
+  dependencies:
+    - core/jquery
+  css:
+    theme:
+      # Custom CSS file to be loaded in all media circumstances
+      css/druppio_monopage.css: {}
+
+druppio-monopage-custom:
+  css:
+    theme:
+      '/sites/default/files/druppio-monopage-custom.css': {type: external}
+
+easing:
+  version: 1.3
+  js:
+    '//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js': {type: external}

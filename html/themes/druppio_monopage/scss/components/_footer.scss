@@ -1,0 +1,83 @@
+//************   FOOTER    ***************//
+.footer-wrapper {
+    background-position: center right;
+    background-size: cover;
+    position: relative;
+    background-image: url(../images/photo-06.jpg);
+    color: $footer-text-color;
+    .footer-inner {
+        padding-top: 80px;
+        background: rgba(white, 0.9);
+        @media (min-width: $screen-sm-min) {
+            background: transparent;
+            background-image: linear-gradient(90deg, rgba(white, 0.9) 50%, transparent 50.1%);
+        }
+    }
+    .block-title {
+        font-size: 14px
+    }
+    a {
+        color: $footer-link-color;
+        &:hover,
+        &.active {
+            color: $footer-link-hover-color;
+        }
+    }
+    .menu {
+        float: none !important;
+        li {
+            float: none;
+            margin: 0
+        }
+    }
+    .social-links {
+        li {
+            display: inline-block;
+            list-style-type: none;
+            padding: 10px;
+        }
+    }
+    form {
+        .form-group {
+            margin-bottom: 40px;
+        }
+        label {
+            font-weight: normal;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+        input {
+            &:focus {
+                border-top: none;
+            }
+        }
+    }
+    .contact-form{
+        color: darken(white, 30%);
+    }
+    i{
+        padding-right:10px;
+    }
+}
+
+.footer-cc {
+    margin-top: 60px;
+    padding: 20px 0 10px 0;
+    border-top: 1px solid rgba(white, 0.1);
+    font-size: 11px;
+    color: darken(white, 40%);
+    text-align: center;
+        @media (min-width: $screen-sm-min) {
+            text-align: left;
+        }
+    a {
+        color: darken(white, 40%);
+        text-decoration: underline;
+    }
+    .region-footer-copyright {
+        text-align: center;
+        @media (min-width: $screen-sm-min) {
+            text-align: right;
+        }
+    }
+}

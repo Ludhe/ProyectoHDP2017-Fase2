@@ -1,0 +1,70 @@
+.quick_links-block_1 {
+    .block-title {
+        text-align: center;
+    }
+}
+
+.view-quick-links {
+    @media (min-width: $screen-sm-min) {
+        margin-bottom: 80px;
+    }
+    .views-row {
+        margin-bottom: 40px;
+        @media (min-width: $screen-sm-min) {
+            margin-bottom: 0;
+        }
+    }
+    .quick-links-icon-container {
+        border: 1px solid $brand-secundary;
+        border-radius: 50%;
+        margin: 0 20%;
+        position: relative;
+        transition: border-color 0.3s;
+        &:before {
+            content: "";
+            display: block;
+            margin-top: 100%;
+        }
+        &:hover {
+            border: 1px solid white;
+            i {
+                color: white;
+                margin-top: -10%;
+                padding-top: calc(50% - 44px);
+            }
+        }
+        .quick-links-icon {
+            bottom: 0;
+            color: $brand-secundary;
+            left: 0;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            top: 0;
+            box-sizing: border-box;
+            i {
+                font-size: 82px;
+                padding-top: calc(50% - 41px);
+                transition: all 0.3s;
+            }
+        }
+    }
+    text-align: center;
+    color: darken(white, 40%);
+    font-size: 12px;
+    .views-field-title {
+        margin: 20px 0 10px 0;
+        text-transform: uppercase;
+        a {
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .views-field-body {
+        margin: 0 20%;
+    }
+}

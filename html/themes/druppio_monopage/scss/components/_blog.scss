@@ -1,0 +1,32 @@
+article {
+    &.article {
+        &.teaser {
+            .content {
+                margin: 10px 0;
+                padding: 20px;
+                background-color: lighten($brand-primary, 80%);
+            }
+            .read-more {
+                text-align: right;
+                margin-top: 20px;
+            }
+            .field--name-field-image {
+                img {
+                    border: 1px solid $brand-primary;
+                    padding: 6px;
+                    display: block;
+                }
+            }
+            margin-bottom: 40px;
+        }
+        &.full {
+            .field--name-field-image {
+                float: left;
+                margin-right: 40px;
+            }
+        }
+    }
+}
+#block-views-block-blog-block-1{
+    margin: 80px 0;
+}

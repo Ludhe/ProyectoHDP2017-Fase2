@@ -1,0 +1,56 @@
+name: 'Druppio Drupal 8 MonoPage Responsive Theme'
+type: theme
+description: 'Druppio Drupal 8 MnonoPage Responsive Theme based on bootstrap. Developed & Designed by <a href=http://www.druppio.com>Druppio</a>'
+package: Core
+force_export: false
+inherit_layout: false
+scss_support: true
+libraries:
+  - druppio_monopage/bootstrap
+  - druppio_monopage/druppio-monopage
+  - druppio_monopage/easing
+
+regions:
+    navigation: Navigation
+    navigation_user_menu :   'Navigation (User menu)'
+    navigation_collapsible: 'Navigation (Collapsible)'
+    navigation_search: 'Navigation (Search)'
+    header: 'Header'
+    highlighted: Highlighted
+    slideshow: Slideshow
+    top_bar: 'Top Bar'
+    content_top: 'Content Top'
+    help: Help
+    page_top: 'Page top'
+    content: Content
+    page_bottom: 'Page bottom'
+    content_bottom: 'Content Bottom'
+    sidebar_first: 'Primar Sidebar'
+    sidebar_second: 'Secondary Sidebar'
+    bottom_bar: 'Bottom Bar'
+    footer: 'Footer First'
+    footer_second: 'Footer Second'
+    footer_third: 'Footer Third'
+    footer_fourth: 'Footer Fourth'
+    footer_credits: 'Footer credits'
+    footer_copyright: 'Footer copyright'
+
+
+features:
+    logo: true
+    name: true
+    slogan: true
+    node_user_picture: true
+    comment_user_picture: true
+    comment_user_verification: true
+    favicon: true
+    main_menu: true
+    secondary_menu: true
+
+# core: 8.x
+
+# Information added by Drupal.org packaging script on 2017-01-23
+version: '8.x-1.0'
+core: '8.x'
+project: 'druppio_monopage'
+datestamp: 1485152890

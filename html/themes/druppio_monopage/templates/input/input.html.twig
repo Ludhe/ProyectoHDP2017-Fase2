@@ -1,0 +1,19 @@
+{% if attributes.hasClass('button') %}
+{%
+  set classes = [
+    'btn',
+    'btn-default',
+  ]
+%}
+{% endif %}
+{% if attributes.hasClass('button--primary') %}
+{%
+  set classes = [
+    'btn-primary',
+    'btn',
+    'btn-default',
+  ]
+%}
+{% endif %}
+
+<input{{ attributes.addClass(classes) }} />{{ children }}

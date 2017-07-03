@@ -1,0 +1,14 @@
+//***********  FORM  **************//
+form {
+    .form-text,
+    .form-textarea,
+    .form-email {
+        padding: 4px 2px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid $gray;
+        background-color: transparent;
+        width: 100%;
+    }
+}

@@ -1,0 +1,25 @@
+.btn {
+    border-bottom-width: 4px;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    &.btn-primary {
+        position: relative;
+        padding-right: 40px;
+        &:after {
+            font-family: FontAwesome;
+            content: "\f054";
+            display: block;
+            position: absolute;
+            right: 18px;
+            font-size: 14px;
+            top: calc(50% - 7px);
+            transition: right 0.2s;
+        }
+        &:hover {
+            &:after {
+                right: 10px;
+            }
+        }
+    }
+}

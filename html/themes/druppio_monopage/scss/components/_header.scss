@@ -1,0 +1,79 @@
+.region-slideshow {
+    .form-group {
+        margin-bottom: 0;
+    }
+}
+
+.view-header-image {
+    position: relative;
+    .header-image {
+        background-position: center center;
+        background-size: cover;
+        color: #fff;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+    }
+    .page-scroll-wrapper {
+        position: absolute;
+        top: -10%;
+        left: calc(50% - 50px);
+        z-index: 1;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        transition: top 0.8s ease-out;
+        transition-delay: 2s;
+        .page-scroll {
+            &:focus,&:link,&:active {
+            outline: none;
+
+        }
+            color: white;
+            font-size: 28px;
+            padding-top: 4px;
+            transition: padding 0.3s ease-out;
+            display: block;
+            border: 1px solid white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            &:hover {
+                padding-top: 12px;
+                background-color: rgba(white, 0.3)
+            }
+        }
+    }
+    .header-image-text {
+        top: 35%;
+        position: absolute;
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        width: 100%;
+        padding: 0 10%;
+        @media (min-width: $screen-sm-min) {
+        padding: 0 30%;
+        }
+        color: white;
+        h2 {
+            font-size: 50px;
+            @media (min-width: $screen-sm-min) {
+            font-size: 80px;
+            }
+            font-weight: bold;
+            text-shadow: 0 0 15px black;
+            text-transform: uppercase;
+        }
+        p {
+            color: darken(white, 20%);
+        }
+    }
+}
+
+.arrow-down {
+    .page-scroll-wrapper {
+        top: 80%;
+    }
+}

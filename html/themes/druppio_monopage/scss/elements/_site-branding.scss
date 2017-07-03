@@ -1,0 +1,22 @@
+.system_branding_block {
+    a {
+        padding: 15px 0;
+        display: block;
+
+        img {
+            transition: max-width 0.2s linear;
+            max-height: 34px;
+        }
+    }
+}
+
+.scrolled-down {
+    .system_branding_block {
+        a {
+            padding: 10px 0;
+        }
+        img {
+            max-width: 80%;
+        }
+    }
+}

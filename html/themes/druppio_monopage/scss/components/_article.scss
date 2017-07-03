@@ -1,0 +1,11 @@
+.article{
+    &.teaser {
+        h2{
+            margin-top: 20px;
+            @media (min-width: $screen-sm-min) {
+            margin-top: 0;
+            }
+        }
+        margin-bottom: 40px;
+    }
+}

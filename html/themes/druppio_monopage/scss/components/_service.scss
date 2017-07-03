@@ -1,0 +1,91 @@
+.content-bottom-wrapper {
+    padding: 40px 0;
+    @media (min-width: $screen-sm-min) {
+        padding: 80px 0;
+    }
+    background-position: center right;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-image: url(../images/photo-05.jpg);
+    .content-bottom-inner {
+        background-color: rgba(white, 0.8);
+        padding: 40px 0;
+        @media (min-width: $screen-sm-min) {
+            padding: 80px 0;
+        }
+    }
+}
+
+.service {
+    .views-field-field-images {
+        text-align: center;
+        .field-content {
+            position: relative;
+            img {
+                border-radius: 50%;
+                padding: 9px;
+            }
+            @media (min-width: $screen-sm-min) {
+                &:after {
+                    border: 2px solid lighten($brand-primary, 40%);
+                    border-radius: 50%;
+                    position: absolute;
+                    z-index: 1;
+                    content: "";
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    top: 10px;
+                    left: -10px;
+                    transition: all 0.2s ease-in;
+                }
+                &:hover:after {
+                    top: 0;
+                    left: 0;
+                    border-width: 6px;
+                }
+            }
+        }
+    }
+    .view-content {
+        .views-row {
+            margin-bottom: 60px;
+            @media (min-width: $screen-sm-min) {
+                margin-bottom: 30px;
+            }
+            text-align: center;
+            &:first-child {
+                .field-content {
+                    &:after {
+                        top: -10px;
+                        left: -10px;
+                    }
+                    &:hover:after {
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+            &:last-child {
+                .field-content {
+                    &:after {
+                        top: 5px;
+                        left: 10px;
+                    }
+                    &:hover:after {
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+    .views-field-title {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}

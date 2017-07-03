@@ -1,0 +1,27 @@
+//*********  background-block ************//
+.background-block {
+    background-position: center right;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    .container-wrapper {
+        width: 100%;
+        background-image: linear-gradient(150deg, transparent 30%, rgba(white, 0.9) 30.1%);
+        @media (min-width: $screen-sm-min) {
+
+        background-image: linear-gradient(120deg, transparent 40%, rgba(white, 0.9) 40.1%);
+        }
+        padding: 200px 0;
+
+    }
+    .field-image{
+        img{
+        border: 1px solid $brand-primary;
+        padding: 4px;
+        }}
+        .block-title{
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+}

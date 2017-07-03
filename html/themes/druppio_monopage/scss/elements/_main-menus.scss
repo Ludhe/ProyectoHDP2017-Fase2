@@ -1,0 +1,67 @@
+.navbar-default {
+    &.navbar-fixed-top {
+        border-width: 0 0 5px 0;
+        z-index: 3;
+    }
+    .navbar-nav {
+        li {
+            //== vertical & horizontal margin
+            transition: margin 0.2s linear;
+            a {
+                margin: 17px 10px;
+                transition: margin 0.2s linear;
+                padding-left: $navbar-padding-horizontal;
+                padding-right: $navbar-padding-horizontal;
+                text-transform: uppercase;
+                border-bottom: 1px solid transparent;
+                &:hover,
+                &:active {
+                    border-bottom: 1px solid white;
+                }
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            &.dropdown {
+                .dropdown-menu {
+                    li {
+                         border-top: 1px solid darken(white, 60%);
+                        &:first-child{
+                            border-top: none;
+                        }
+                        a {
+                            margin: 0;
+                            padding: 6px 10px;
+                            &:hover{
+                                border-color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.scrolled-down {
+    .navbar {
+        background-color: $brand-primary;
+        min-height: 50px;
+        .navbar-nav {
+            li {
+                a {
+                    margin: 10px 10px;
+                }
+            }
+        }
+    }
+}
+
+
+.user-logged-in {
+    .navbar-default {
+        &.navbar-fixed-top {
+            position: inherit;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+article {
+    .author {
+        font-size: 12px;
+        text-align: right;
+        color: lighten($gray, 30%);
+        font-style: italic;
+    }
+    &.full {
+        .author {
+            margin-bottom: 30px;
+        }
+        margin-bottom: $padding-large-vertical * 4;
+    }
+}
