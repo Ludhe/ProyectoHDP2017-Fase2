@@ -1,0 +1,46 @@
+---
+ - hosts: all
+   remote_user: vagrant
+   sudo: yes
+
+   tasks:
+    - name: actualizando repositorios
+      command: apt-get update
+    - name: instalando apache
+      apt: name=apache2  state=installed
+    - name: instalando php
+      apt: name=php5 state=installed
+    - name: instalando mysql
+      apt: name=mysql-server state=installed
+    - name: instalando complemento de php
+      apt: name=php5-mysql
+    - name: instala python-mysqldb
+      apt: name=python-mysqldb state=installed
+    - name: crea la base de datos de drupal
+      mysql_db: name=dpdatabase state=present
+    - name: crea el usuario en la base de datos
+      mysql_user:
+         name: dpuser
+         password: diauesfmocc
+         priv: 'dpdatabase.*:ALL,GRANT'
+         state: present
+    - name: Instalando git
+      apt: name=git state=installed
+    - name: borra el contenido de/var/www para usar el de git hub
+      command: rm -rf /var/www
+    - name: Clona el repositorio de Git hub
+      git: repo=https://github.com/Ludhe/ProyectoHDP2017-Fase2 dest=/var/www
+    - name: cambiar configuraciones de apache para el soporte de URL limpios
+      command: cp /var/www/apache2.conf /etc/apache2/apache2.conf
+    - name: Restore database
+      mysql_db:
+           name=dpdatabase
+           state=import
+           target=/var/www/BaseDatosDrupal.sql
+    - name: activar el modulo rewrite para soporte de url limpios
+      command: a2enmod rewrite
+    - name: reiniciar apache
+      service: name=apache2 state=restarted
+
+
+
